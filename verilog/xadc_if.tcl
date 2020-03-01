@@ -78,7 +78,7 @@ puts [get_hw_devices]
 # Program and Refresh the XC7K325T Device
 current_hw_device [lindex [get_hw_devices] 0]
 refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
-set_property PROGRAM.FILE {C:/Users/Jak/win_shared/projs/xadc_if/verilog/synthesis/xadc_if.runs/impl_1/xadc_if.bit} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Jak/win_shared/projs/xadc_if/verilog/synthesis/xadc_if.runs/impl_1/xadc_top.bit} [lindex [get_hw_devices] 0]
 set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
 
 program_hw_devices [lindex [get_hw_devices] 0]
